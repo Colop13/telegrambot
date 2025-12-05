@@ -93,6 +93,7 @@
 				<input type="text" placeholder='Имя' id='user_name'>
 				<input type="text" placeholder='E-mail' id='user_email'>
 				<input type="text" placeholder='Телефон' id='user_phone'>
+				<div id="error"></div>
 				<button id="order">Оформить</button>
 				
 				
@@ -134,7 +135,6 @@
 						name: name,
 						email: email,
 						phone: phone
-					
 					}
 					tg.sendData(JSON.stringfy(data));
 					
@@ -144,6 +144,7 @@
 	</body>
 
 </html>
+
 
 
 
