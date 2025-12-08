@@ -120,7 +120,7 @@
 					let phone = document.getElementById('user_phone').value; 
 					if (name.length < 5) {
 						document.getElementById('error').innerText = 'Ошибка в имени';
-					<!--return; -->
+						return;
 					}
 					if (email.length < 5) {
 						document.getElementById('error').innerText = 'Ошибка в маиле';
@@ -138,12 +138,13 @@
 					}
 					tg.sendData(JSON.stringify(data));
 					
-					tg.close();
+					
 				});
 			</script>
 	</body>
 
 </html>
+
 
 
 
